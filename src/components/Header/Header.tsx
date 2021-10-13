@@ -1,4 +1,5 @@
 import { menuData } from '../../data/MenuData';
+import { ButtonComponent } from '../Button/Button';
 import { Logo, MenuBars, Navbar, NavMenu, NavMenuLinks } from './styles';
 
 const Header = () => {
@@ -12,8 +13,9 @@ const Header = () => {
               <NavMenuLinks to={item.link} key={index}>
                 {item.title}
               </NavMenuLinks>
-          ))};
+          ))}
         </NavMenu>
+        <ButtonComponent />
       </Navbar>
     </>
   )

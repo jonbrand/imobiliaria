@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 
 export const Navbar = styled.nav`
@@ -15,13 +15,30 @@ export const Navbar = styled.nav`
   background: green;
 `;
 
+export const NavLink = css`
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100%auto;
+  cursor: pointer;
+  text-decoration: none;
+`;
+
 export const Logo = styled(Link)<any>`
+  ${NavLink}
   color: #000;
   font-style: italic;
 `;
 
 export const MenuBars = styled.i``;
 
-export const NavMenu = styled.div``;
+export const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: -48px;
+`;
 
-export const NavMenuLinks = styled(Link)<any>``;
+export const NavMenuLinks = styled(Link)<any>`
+  ${NavLink}
+`;

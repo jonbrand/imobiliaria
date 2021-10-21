@@ -74,11 +74,12 @@ export const HeroContent = styled.div`
   flex-direction: column;
   max-width: 1600px;
   width: calc(100% - 100px);
-  color: #fff;
+  color: #FFF;
+  font-weight: 600;
 
   h1 {
     font-size: clamp(1rem, 8vw, 2rem);
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     text-align: left;

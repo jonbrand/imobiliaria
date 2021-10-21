@@ -1,6 +1,6 @@
-import { menuData } from '../../data/MenuData';
+import { SearchOutline } from 'heroicons-react';
 import { ButtonComponent } from '../Button/Button';
-import { Logo, MenuBars, Navbar, NavMenu, NavMenuLinks } from './styles';
+import { Logo, MenuBars, Navbar, NavInput, NavInputWrapper } from './styles';
 
 interface HeaderProps {
   toggle: any;
@@ -10,15 +10,14 @@ export const Header = ({ toggle }: HeaderProps) => {
   return (
     <> 
       <Navbar>
-        <Logo>JORGA</Logo>
+        <Logo>Faulhaber</Logo>
         <MenuBars onClick={toggle} />
-        <NavMenu>
-          {menuData.map((item, index) => (
-              <NavMenuLinks to={item.link} key={index}>
-                {item.title}
-              </NavMenuLinks>
-          ))}
-        </NavMenu>
+        <NavInputWrapper>
+          <NavInput 
+            placeholder="Digite a cidade ou bairro ou caracteristica (exemplo: fazenda)"
+          />
+          <SearchOutline />
+        </NavInputWrapper>
         <ButtonComponent />
       </Navbar>
     </>

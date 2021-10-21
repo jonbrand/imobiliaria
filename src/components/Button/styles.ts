@@ -19,6 +19,7 @@ export const Button = styled(Link)<any>`
 
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 
   padding: ${({ big }) => ( big ? '16px 40px' : '14px 24px')};
 

@@ -28,8 +28,10 @@ export const NavLink = css`
 
 export const Logo = styled(Link)<any>`
   ${NavLink}
-  color: #fff;
+  color: #000;
   font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
 `;
 
 export const MenuBars = styled( FaBars )`
@@ -49,10 +51,23 @@ export const MenuBars = styled( FaBars )`
   }
 `;
 
-export const NavMenu = styled.div`
+export const NavInputWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-right: -48px;
+
+  
+`;
+
+export const NavInput = styled.input`
+  height: 2rem;
+  width: 28rem;
+  border: none;
+
+  margin-right: 0.375rem;
+  padding: 5px 25px;
+
+  border-radius: 15px;
 
   @media screen and (max-width: 768px) {
     display: none;

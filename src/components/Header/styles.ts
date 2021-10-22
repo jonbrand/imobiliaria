@@ -6,16 +6,17 @@ export const Navbar = styled.nav`
   height: 60px;
   display: flex;
   justify-content: space-between;
-  
+
   padding: 1rem 2rem;
   z-index: 100;
   position: fixed;
 
   width: 100%;
+  background: #fff;
 `;
 
 export const NavLink = css`
-  color: #FFF;
+  color: #fff;
   display: flex;
   align-items: center;
 
@@ -34,7 +35,7 @@ export const Logo = styled(Link)<any>`
   font-weight: bold;
 `;
 
-export const MenuBars = styled( FaBars )`
+export const MenuBars = styled(FaBars)`
   display: none;
 
   @media screen and (max-width: 768px) {
@@ -45,7 +46,7 @@ export const MenuBars = styled( FaBars )`
     cursor: pointer;
     position: absolute;
     top: 0;
-    
+
     right: 0;
     transform: translate(-50%, 25%);
   }
@@ -55,8 +56,6 @@ export const NavInputWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-right: -48px;
-
-  
 `;
 
 export const NavInput = styled.input`
@@ -68,6 +67,7 @@ export const NavInput = styled.input`
   padding: 5px 25px;
 
   border-radius: 15px;
+  border: 1px solid #aaa;
 
   @media screen and (max-width: 768px) {
     display: none;

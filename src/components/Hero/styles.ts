@@ -1,70 +1,48 @@
-import styled, { css } from "styled-components/macro";
+import styled, { css, keyframes } from 'styled-components/macro';
 import { IoMdArrowRoundForward } from 'react-icons/io';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
 
 export const HeroSection = styled.section`
+  display: flex;
+
   height: 100vh;
   max-height: 1100px;
-  position: relative;
-  overflow: hidden;
 `;
 
-export const HeroWrapper = styled.div`
-  width: 100%;
+export const HeroWrapper = styled.div<any>`
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
   position: relative;
+  transition: transform 1s ease;
+
+  transform: translateX(${props => `-${props.current * 33.5}%`});
 `;
 
 export const HeroSlide = styled.div`
+  position: relative;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 `;
 
 export const HeroSlider = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: 2;
-    
-    width: 100%;
-    height: 100vh;
-    bottom: 0vh;
-
-    left: 0;
-    overflow: hidden;
-    opacity: 0.4;
-
-    background: linear-gradient()(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 50%rgba,
-      rgba(0, 0, 0, 0.6) 100%
-    )
-  }
 `;
 
 export const HeroImage = styled.img`
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
 
+  pointer-events: none;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  filter: brightness(70%);
 `;
 
 export const HeroContent = styled.div`
@@ -74,7 +52,7 @@ export const HeroContent = styled.div`
   flex-direction: column;
   max-width: 1600px;
   width: calc(100% - 100px);
-  color: #FFF;
+  color: #fff;
   font-weight: 600;
 
   h1 {
@@ -96,10 +74,11 @@ export const Arrow = styled(IoMdArrowRoundForward)`
   margin-left: 0.5rem;
 `;
 
-export const SliderButtons = styled.div`
-  position: absolute;
+export const SliderButtons = styled.div<any>`
+  position: fixed;
   bottom: 50px;
-  right: 50px;
+  left: calc(${props => `${props.current * 100}vw`} + 50px);
+  transition: left 1s;
 
   display: flex;
   z-index: 10;
@@ -113,12 +92,13 @@ export const arrowButtons = css`
   cursor: pointer;
   background: #000d1a;
   border-radius: 50px;
-  
+
   padding: 10px;
   margin-right: 1rem;
   user-select: none;
 
   transition: 0.3s;
+  box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.5);
 
   &:hover {
     background: #cd853f;

@@ -56,18 +56,24 @@ export const NavInputWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-right: -48px;
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  padding: 4px 8px;
+  transition: border-color 0.3s;
+
+  &:focus-within {
+    border-color: #222;
+  }
 `;
 
 export const NavInput = styled.input`
-  height: 2rem;
   width: 28rem;
-  border: none;
+  border: 0;
+  background: transparent;
+  outline: 0;
 
   margin-right: 0.375rem;
   padding: 5px 25px;
-
-  border-radius: 15px;
-  border: 1px solid #aaa;
 
   @media screen and (max-width: 768px) {
     display: none;

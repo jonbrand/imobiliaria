@@ -8,18 +8,16 @@ interface HeaderProps {
 
 export const Header = ({ toggle }: HeaderProps) => {
   return (
-    <> 
+    <>
       <Navbar>
         <Logo>Faulhaber</Logo>
         <MenuBars onClick={toggle} />
         <NavInputWrapper>
-          <NavInput 
-            placeholder="Digite a cidade ou bairro ou caracteristica (exemplo: fazenda)"
-          />
-          <SearchOutline />
+          <NavInput placeholder="Digite a cidade ou bairro ou caracteristica (exemplo: fazenda)" />
+          <SearchOutline color="#aaa" />
         </NavInputWrapper>
         <ButtonComponent />
       </Navbar>
     </>
-  )
-}
+  );
+};

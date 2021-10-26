@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Button } from '../Button/styles';
+import { Button } from '../../../../components/Button/styles';
 import {
   Arrow,
   HeroContent,

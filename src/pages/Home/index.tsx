@@ -1,0 +1,24 @@
+import React, { useState } from 'react';
+import { Dropdown } from './components/Dropdown/Dropdown';
+import { Header } from './components/Header/Header';
+import { Hero } from './components/Hero/Hero';
+import { InfoSection } from './components/InfoSection/InfoSection';
+import { InfoData } from '../../data/InfoData';
+import { SliderData } from '../../data/SliderData';
+
+export const Home: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <>
+      <Header toggle={toggle} />
+      <Dropdown isOpen={isOpen} toggle={toggle} />
+      <Hero slides={SliderData} />
+      <InfoSection {...InfoData} />
+    </>
+  );
+};

@@ -1,5 +1,5 @@
 import { SearchOutline } from 'heroicons-react';
-import { ButtonComponent } from '../Button/Button';
+import { ButtonComponent } from '../../../../components/Button/Button';
 import { Logo, MenuBars, Navbar, NavInput, NavInputWrapper } from './styles';
 
 interface HeaderProps {

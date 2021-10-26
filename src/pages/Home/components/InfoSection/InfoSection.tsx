@@ -1,13 +1,13 @@
-import { Button } from "../Button/styles"
-import { ColumnLeft, ColumnRight, Container, Section } from "./styles"
+import { Button } from '../../../../components/Button/styles';
+import { ColumnLeft, ColumnRight, Container, Section } from './styles';
 
 interface InfoSectionProps {
-  heading: any,
-  paragraphOne: any,
-  paragraphTwo: any,
-  buttonLabel: any,
-  reverse: any,
-  image: any,
+  heading: any;
+  paragraphOne: any;
+  paragraphTwo: any;
+  buttonLabel: any;
+  reverse: any;
+  image: any;
 }
 
 export const InfoSection = ({
@@ -16,7 +16,7 @@ export const InfoSection = ({
   paragraphTwo,
   buttonLabel,
   reverse,
-  image
+  image,
 }: InfoSectionProps) => {
   return (
     <Section>
@@ -25,12 +25,14 @@ export const InfoSection = ({
           <h1>{heading}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
-          <Button to='/home' primary='true'>{buttonLabel}</Button>
+          <Button to="/home" primary="true">
+            {buttonLabel}
+          </Button>
         </ColumnLeft>
         <ColumnRight reverse={reverse}>
           <img src={image} alt="home" />
         </ColumnRight>
       </Container>
     </Section>
-  )
-}
+  );
+};

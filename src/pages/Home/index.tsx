@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Dropdown } from './components/Dropdown/Dropdown';
-import { Header } from './components/Header/Header';
 import { Hero } from './components/Hero/Hero';
 import { InfoSection } from './components/InfoSection/InfoSection';
+import { Header } from '../../components/Header/Header';
 import { InfoData } from '../../data/InfoData';
 import { SliderData } from '../../data/SliderData';
 

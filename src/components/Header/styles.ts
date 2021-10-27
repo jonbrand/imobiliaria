@@ -64,6 +64,11 @@ export const NavInputWrapper = styled.div`
   &:focus-within {
     border-color: #222;
   }
+
+  > button {
+    border: 0;
+    background: none;
+  }
 `;
 
 export const NavInput = styled.input`

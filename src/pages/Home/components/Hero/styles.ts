@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from 'styled-components/macro';
+import styled, { css } from 'styled-components/macro';
 import { IoMdArrowRoundForward } from 'react-icons/io';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
 

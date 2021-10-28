@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as S from './styles';
 import { HousesData } from './components/HousesData';
-import { Map } from './components/Map';
+import { Map } from './components/Map/Map';
 
 export const Search: React.FC = () => {
   return (

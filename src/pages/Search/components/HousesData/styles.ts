@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   padding: 32px 16px;
-  width: 100%;
+  width: 85%;
 
   > hr {
     margin-bottom: 24px;

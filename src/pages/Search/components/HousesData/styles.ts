@@ -42,12 +42,28 @@ export const HousesList = styled.div`
   gap: 16px;
 
   width: 100%;
+
+  @media (max-width: 940px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 616px) {
+    grid-template-columns: 1fr;
+    width: 256px;
+    margin: 0 auto;
+  }
 `;
 
 export const House = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
   width: 256px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  background: none;
+  transition: 0.5s;
 
   > img {
     width: 100%;
@@ -55,7 +71,11 @@ export const House = styled.div`
   }
 
   > div {
+    display: flex;
+    flex-direction: column;
     padding: 8px;
+    width: 100%;
+
     > header {
       display: flex;
       justify-content: space-between;
@@ -76,7 +96,12 @@ export const House = styled.div`
     > footer {
       display: flex;
       justify-content: space-between;
+      width: 100%;
     }
+  }
+
+  &:hover {
+    box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.4);
   }
 `;
 

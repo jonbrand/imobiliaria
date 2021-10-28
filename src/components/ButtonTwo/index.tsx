@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 
 import * as S from './styles';
 
-const Button: React.FC = ({ children }) => {
-  return <S.Container>{children}</S.Container>;
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  primary?: boolean;
+  icon?: ReactNode;
+}
+
+const Button: React.FC<ButtonProps> = ({
+  primary = false,
+  icon: Icon,
+  children,
+}) => {
+  return (
+    <S.Container primary={primary}>
+      {Icon && Icon}
+      {children}
+    </S.Container>
+  );
 };
 
 export { Button };

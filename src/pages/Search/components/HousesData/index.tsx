@@ -3,6 +3,9 @@ import {
   ChevronRightOutline,
   TrashOutline,
   HeartOutline,
+  FilterOutline,
+  RssOutline,
+  ChevronDownOutline,
 } from 'heroicons-react';
 import { nanoid } from 'nanoid';
 import { Button } from '../../../../components/ButtonTwo';
@@ -26,12 +29,18 @@ export const HousesData: React.FC = () => {
 
         <S.ButtonsContainer>
           <div>
-            <Button>Filtrar</Button>
-            <Button>Farejar Imovel</Button>
+            <Button primary icon={<FilterOutline size={16} color="#fff" />}>
+              Filtrar
+            </Button>
+            <Button icon={<RssOutline size={16} color="#333" />}>
+              Farejar Imovel
+            </Button>
           </div>
 
           <div>
-            <Button>Mais Relevantes</Button>
+            <Button icon={<ChevronDownOutline size={16} color="#333" />}>
+              Mais Relevantes
+            </Button>
           </div>
         </S.ButtonsContainer>
       </header>

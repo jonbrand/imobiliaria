@@ -6,24 +6,25 @@ import * as S from './styles';
 export const Map: React.FC = () => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyBac89P1KXvt_D6XB3AO21LSfEOh5dZmGk"
-  })
+    googleMapsApiKey: 'AIzaSyBac89P1KXvt_D6XB3AO21LSfEOh5dZmGk',
+  });
 
   return (
     <S.Container>
-      {
-        isLoaded ? (
+      <S.MapWrapper>
+        {isLoaded ? (
           <GoogleMap
-            mapContainerStyle={{ width: '100%', height: '100%'}}
+            mapContainerStyle={{ width: '100%', height: '100%' }}
             center={{
-              lat: -23.62964960895306, 
-              lng: -46.73586187144678
+              lat: -23.62964960895306,
+              lng: -46.73586187144678,
             }}
             zoom={15}
-          >
-          </GoogleMap>
-      ) : <></>
-      }
+          ></GoogleMap>
+        ) : (
+          <></>
+        )}
+      </S.MapWrapper>
     </S.Container>
   );
 };

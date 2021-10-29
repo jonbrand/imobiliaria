@@ -11,12 +11,12 @@ export const Container = styled.button<ContainerProps>`
 
   border: 0;
   background: none;
-  border: 1px solid #aaa;
+  border: 1px solid var(--grey-light);
   padding: 8px 12px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 600;
-  color: #333;
+  color: var(--text-title);
 
   > svg {
     margin-right: 8px;
@@ -25,8 +25,8 @@ export const Container = styled.button<ContainerProps>`
   ${props =>
     props.primary &&
     css`
-      background: #4f63f3;
-      color: #fff;
-      border-color: ${shade(0.3, '#4f63f3')};
+      background: var(--red);
+      color: var(--text-button);
+      border-color: ${shade(0.3, '#C0C0C0')};
     `};
 `;

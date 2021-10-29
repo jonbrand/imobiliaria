@@ -13,13 +13,13 @@ export const Header = ({ toggle }: HeaderProps) => {
   return (
     <>
       <Navbar>
-        <Logo>Faulhaber</Logo>
+        <Logo>Jorga</Logo>
         <MenuBars onClick={toggle} />
         <NavInputWrapper>
           <NavInput placeholder="Digite a cidade ou bairro ou caracteristica (exemplo: fazenda)" />
 
           <button onClick={() => history.push('/busca')}>
-            <SearchOutline color="#aaa" />
+            <SearchOutline color="#C0C0C0" />
           </button>
         </NavInputWrapper>
         <ButtonComponent />

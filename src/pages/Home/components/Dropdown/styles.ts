@@ -11,7 +11,7 @@ export const DropdownContainer = styled.div<DropdownProps>`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #CD853F;
+  background: var(--grey-medium);
   display: grid;
   align-items: center;
   top: ${({ isOpen }) => ( isOpen ? '0' : '-100%')};

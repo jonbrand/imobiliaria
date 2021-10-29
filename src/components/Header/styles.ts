@@ -12,11 +12,11 @@ export const Navbar = styled.nav`
   position: fixed;
 
   width: 100%;
-  background: #fff;
+  background: var(--background);
 `;
 
 export const NavLink = css`
-  color: #fff;
+  color: var(--text-body);
   display: flex;
   align-items: center;
 
@@ -29,7 +29,7 @@ export const NavLink = css`
 
 export const Logo = styled(Link)<any>`
   ${NavLink}
-  color: #000;
+  color: var(--black-medium);
   font-style: italic;
   font-size: 25px;
   font-weight: bold;
@@ -56,13 +56,13 @@ export const NavInputWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-right: -48px;
-  border: 1px solid #aaa;
-  border-radius: 15px;
-  padding: 4px 8px;
+  border: 1px solid var(--grey-light);
+  border-radius: 5px;
+  padding: 16px 8px;
   transition: border-color 0.3s;
 
   &:focus-within {
-    border-color: #222;
+    border-color: var(--black);
   }
 
   > button {

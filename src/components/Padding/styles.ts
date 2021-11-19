@@ -16,11 +16,10 @@ export const Container = styled.div`
 export const MapContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  position: relative;
   height: 125px;
-
   width: 100%;
-
-  background: #344;
 `;
 
 export const InfoBrokerContainer = styled.div`
@@ -30,7 +29,7 @@ export const InfoBrokerContainer = styled.div`
 
   height: 125px;
   width: 100%;
-  background: #9999;
+  background: var(--text-title);
 
   font-size: 1rem;
   font-weight: lighter;
@@ -39,4 +38,12 @@ export const InfoBrokerContainer = styled.div`
   color: var(--text-button);
   padding: 1rem 1rem;
 
+`;
+
+export const MapWrapper = styled.div`
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 `;

@@ -25,7 +25,7 @@ export const InfoSection = ({
           <h1>{heading}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
-          <Button to="/home" primary="true">
+          <Button to="/busca" primary="true">
             {buttonLabel}
           </Button>
         </ColumnLeft>

@@ -29,13 +29,13 @@ export const InfoBrokerContainer = styled.div`
 
   height: 125px;
   width: 100%;
-  background: var(--text-title);
+  background: var(--background);
 
   font-size: 1rem;
   font-weight: lighter;
   font-style: normal;
 
-  color: var(--text-button);
+  color: var(--black);
   padding: 1rem 1rem;
 
 `;

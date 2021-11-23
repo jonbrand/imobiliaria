@@ -26,9 +26,9 @@ export const Padding = () => {
         </S.MapWrapper>
       </S.MapContainer>
       <S.InfoBrokerContainer>
-        <p>Endereco: Rua da Lapa, numero 166</p>
-        <p>Telefone: (12) 94534-5585</p>
-        <p>E-mail: gmail@email.com</p>
+        <p>Endereço: Avenida Brás de Pina, 1389</p>
+        <p>Telefone: (21) 96993-1168</p>
+        <p>E-mail: robertojorga@remax.com.be</p>
       </S.InfoBrokerContainer>
     </S.Container>
   );

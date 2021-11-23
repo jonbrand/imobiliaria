@@ -2,8 +2,8 @@ import ImageOne from '../images/imageOne.jpg';
 import ImageTwo from '../images/imageTwo.jpg';
 
 export const InfoData = {
-  heading: 'Explore a variedade de imoveis desejados!',
-  paragraphOne: 'Somos parceiros REMAX BRASIL, e trabalhamos com os melhores imoveis da região',
+  heading: 'Explore a variedade de imoveis desejados',
+  paragraphOne: 'Somos parceiros REMAX BRASIL, e trabalhamos com os melhores imoveis da região!',
   paragraphTwo: 'Realize seu sonho em apenas um clique!',
   buttonLabel: 'Ver Imoveis',
   image: ImageOne,
